@@ -12,6 +12,7 @@ set sw=2
 set relativenumber
 set laststatus=2
 set noshowmode
+set paste
 
 " packages with plug:
 
@@ -24,6 +25,15 @@ Plug 'morhetz/gruvbox'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'sbdchd/neoformat'
+Plug 'valloric/youcompleteme'
+
+" Snippets
+Plug 'epilande/vim-es2015-snippets'
+Plug 'epilande/vim-react-snippets'
+
+" Language specific
+Plug 'styled-components/vim-styled-components'
 
 call plug#end()
 
@@ -36,6 +46,9 @@ let mapleader=" "
 
 " config nerdtree
 let NERDTreeQuitOnOpen=1
+
+" config neoformat
+nmap <Leader>n :Neoformat<CR>
 
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
