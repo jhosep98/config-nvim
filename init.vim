@@ -47,6 +47,7 @@ call plug#end()
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 
+
 " config easymotion
 let mapleader=" "
 
