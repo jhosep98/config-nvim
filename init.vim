@@ -6,12 +6,11 @@ set clipboard=unnamed
 syntax enable
 set showcmd
 set ruler
-set encoding=utf-8
+set encoding=UTF-8
 set showmatch
 set sw=2
 set relativenumber
 set laststatus=2
-set noshowmode
 set paste
 
 " packages with plug:
@@ -20,6 +19,8 @@ call plug#begin('~/.vim/plugged')
 
 " Themes:
 Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -34,6 +35,11 @@ Plug 'epilande/vim-react-snippets'
 
 " Language specific
 Plug 'styled-components/vim-styled-components'
+Plug 'leafgarland/typescript-vim'
+Plug 'hail2u/vim-css3-syntax'
+
+" icons
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
