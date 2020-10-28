@@ -1,3 +1,5 @@
+source $HOME/.config/nvim/themes/airline.vim
+
 set title " Muestra el nombre del archivo en la ventana de la terminal
 set number  " Muestra los numeros de las lineas
 set mouse=a " Permite la integracion del mouse (seleccionar texto, mover le cursor) 
@@ -12,6 +14,7 @@ set sw=2
 set relativenumber
 set laststatus=2
 set paste
+set nolist
 
 " packages with plug:
 
@@ -21,6 +24,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -28,6 +33,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sbdchd/neoformat'
 Plug 'valloric/youcompleteme'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mhinz/vim-signify'
 
 " Snippets
 Plug 'epilande/vim-es2015-snippets'
@@ -37,6 +46,7 @@ Plug 'epilande/vim-react-snippets'
 Plug 'styled-components/vim-styled-components'
 Plug 'leafgarland/typescript-vim'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'pangloss/vim-javascript'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
@@ -47,6 +57,8 @@ call plug#end()
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
 
+" config coc
+let g:coc_global_extensions = ['coc-tsserver']
 
 " config easymotion
 let mapleader=" "
