@@ -32,7 +32,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sbdchd/neoformat'
-Plug 'valloric/youcompleteme'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -66,6 +65,10 @@ let mapleader=" "
 " config nerdtree
 let NERDTreeQuitOnOpen=1
 
+" config files
+noremap <Leader>gs :CocSearch
+noremap <Leader>fs :Files<Cr>
+
 " config neoformat
 nmap <Leader>n :Neoformat<CR>
 
@@ -74,3 +77,9 @@ nmap <Leader>nt :NERDTreeFind<CR>
 
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
+
+" config coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
