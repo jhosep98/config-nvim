@@ -34,8 +34,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-signify'
+Plug 'valloric/youcompleteme'
 
 " Snippets
 Plug 'epilande/vim-es2015-snippets'
