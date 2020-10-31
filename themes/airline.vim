@@ -15,4 +15,5 @@ let g:airline_theme = 'onedark'
 
 " Always show tabs
 set showtabline=2
+" hide show mode
 set noshowmode
