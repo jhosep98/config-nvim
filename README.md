@@ -23,4 +23,4 @@ My personal neovim settings including themes and settings the airline status bar
 
 ## Contact
 
-Created by [@jhosep98](https://jhosep98.github.io/Portfolio2020jdb/) - feel free to contact me!
+Created by [@jhosep98](https://jhosep98.github.io/Portfolio2020jdb/) - feel free to contact me.!
